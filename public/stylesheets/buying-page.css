@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --yellow: #f9d806;
+  --light-yellow: #ffee80;
+  --black: #130f40;
+  --light-color: #666;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  z-index: 1000; /* Ensure navbar stays on top of other content */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.num {
+  color: var(--yellow);
+}
+
+.back-button {
+  color: var(--black);
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: var(--light-yellow);
+}
+
+.back-button:hover {
+  background-color: var(--yellow);
+}
+
+/* Overall page styling */
+body,
+html {
+  /* Set background color of body and html to white */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e0eaf0; /* Light blue background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.info-img {
+  width: 50%;
+  padding: 65px;
+  text-align: center;
+}
+
+.info-img img {
+  max-width: 100%;
+  padding: 65px;
+  height: auto;
+}
+
+.info-product {
+  margin-left: 30px;
+  width: 50%;
+  padding: 0 20px;
+}
+h2 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+}
+
+.form-container {
+  background-color: #ffffcc; /* Light yellow background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+.form-container:hover {
+  background-color: var(--black);
+  color: #fff;
+  transition: all 0.7ms linear;
+}
+
+.form-container h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #333;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form-container button[type="submit"] {
+  background-color: var(--light-yellow);
+  color: var(--black);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: var(--yellow);
+}

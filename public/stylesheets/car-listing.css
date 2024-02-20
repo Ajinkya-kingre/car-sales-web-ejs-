@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --yellow: #f9d806;
+  --light-yellow: #ffee80;
+  --black: #130f40;
+  --light-color: #666;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  z-index: 1000; /* Ensure navbar stays on top of other content */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.logo a {
+  text-decoration: none;
+  background-color: var(--light-yellow);
+  color: var(--black);
+}
+.logo a:hover {
+  color: var(--black);
+}
+.num {
+  color: var(--yellow);
+}
+
+.back-button {
+  color: var(--black);
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: var(--light-yellow);
+}
+
+.back-button:hover {
+  background-color: var(--yellow);
+}
+
+/* Card container styling */
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-container {
+  height: 100%;
+  width: 90%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Card styling */
+
+.card {
+  height: 500px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.card:hover {
+  background-color: var(--black);
+  color: #fff;
+  transition: all 0.2s linear;
+}
+.img_div {
+  height: 60%;
+  width: 100%;
+}
+
+.img_div img {
+  height: 100%;
+  width: 100%;
+}
+
+.product-info {
+  height: 40%;
+  width: 100%;
+}
+
+a {
+  background-color: var(--light-yellow);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+}
+a:hover {
+  background-color: var(--yellow);
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}

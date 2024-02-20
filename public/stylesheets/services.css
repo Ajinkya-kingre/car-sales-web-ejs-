@@ -1,0 +1,109 @@
+/* Resetting default styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --yellow: #f9d806;
+  --light-yellow: #ffee80;
+  --black: #130f40;
+  --light-color: #666;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.navbar-left a {
+  text-decoration: none;
+  color: #fff;
+}
+.navbar-left span {
+  color: var(--yellow);
+}
+
+.navbar-center ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-center ul li {
+  margin-right: 20px;
+}
+
+.navbar-center ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar-center ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-center ul li a:hover {
+  text-decoration: none;
+  transition: all 0.9ms ease-in-out;
+  color: var(--yellow);
+}
+
+.navbar-right .back-button {
+  text-decoration: none;
+  color: var(--black);
+  padding: 8px 16px;
+  background-color: var(--light-yellow);
+  border-radius: 5px;
+}
+
+.navbar-right .back-button:hover {
+  background-color: var(--yellow);
+}
+
+/* Services page styles */
+.services-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .service {
+    width: calc(50% - 20px);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .service h2 {
+    color: #333;
+  }
+  
+  .service p {
+    color: #666;
+    line-height: 1.6;
+  }
